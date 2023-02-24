@@ -60,7 +60,7 @@ This project will guide you on how to use AWS Lambda and Amazon S3 to create a s
 
 - Leave the default settings and click "Create Bucket".
 
-  <img src="D:\NetOps\AWS\Projects\Serverless image processing\1-create_S3buckets.PNG" alt="1-create_S3buckets" style="zoom:38%;" />
+  ![1-create_S3buckets](D:\NetOps\AWS\Projects\Serverless image processing\1-create_S3buckets.PNG)
 
 #### 2. Create an S3 bucket for the processed images.
 
@@ -80,7 +80,7 @@ This project will guide you on how to use AWS Lambda and Amazon S3 to create a s
 
 - Name your role and click "Create Role".
 
-  <img src="D:\NetOps\AWS\Projects\Serverless image processing\2b-IAM_role_Lambda.PNG" alt="2b-IAM_role_Lambda" style="zoom:38%;" />
+  ![2b-IAM_role_Lambda](D:\NetOps\AWS\Projects\Serverless image processing\2b-IAM_role_Lambda.PNG)
 
 #### 4. Create a Lambda function in Python.
 
@@ -162,7 +162,7 @@ This Lambda function downloads an image from an S3 bucket, resizes and optimizes
 
 You can set the environment variable in the AWS Lambda function configuration. In the AWS Lambda console, go to the "Configuration" tab of the Lambda function, scroll down to the "Environment variables" section, and add a new environment variable with the key "DEST_BUCKET_NAME" and the value set to the name of your destination S3 bucket.
 
-<img src="D:\NetOps\AWS\Projects\Serverless image processing\add_env_variable.PNG" alt="add_env_variable" style="zoom:38%;" />
+![add_env_variable](D:\NetOps\AWS\Projects\Serverless image processing\add_env_variable.PNG)
 
 ####  6. Set up S3 events to trigger the Lambda function
 
