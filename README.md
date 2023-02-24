@@ -4,7 +4,20 @@
 
 Table of Contents:
 
-[TOC]
+- [Project Description](#project-description)
+- [Prerequisites](#prerequisites)
+- [Steps](#steps)
+  * [1. Create an S3 bucket for the original images.](#1-create-an-s3-bucket-for-the-original-images)
+  * [2. Create an S3 bucket for the processed images.](#2-create-an-s3-bucket-for-the-processed-images)
+  * [3. Create an IAM role for the Lambda function.](#3-create-an-iam-role-for-the-lambda-function)
+  * [4. Create a Lambda function in Python.](#4-create-a-lambda-function-in-python)
+  * [5. Use the Pillow library to resize and optimize images.](#5-use-the-pillow-library-to-resize-and-optimize-images)
+  * [6. Set up S3 events to trigger the Lambda function](#6-set-up-s3-events-to-trigger-the-lambda-function)
+  * [7. Test the Image Processing Function](#7-test-the-image-processing-function)
+  * [8. Monitor the Lambda function](#8-monitor-the-lambda-function)
+- [Conclusion](#conclusion)
+
+
 
 
 
@@ -31,9 +44,9 @@ This project will guide you on how to use AWS Lambda and Amazon S3 to create a s
 3. Create an IAM role for the Lambda function.
 4. Create a Lambda function in Python.
 5. Use the Pillow library to resize and optimize images.
-6. Add code to the Lambda function to process images.
-7. Set up an S3 event to trigger the Lambda function.
-8. Test the image processing pipeline by uploading an image to the source bucket.
+6. Set up an S3 event to trigger the Lambda function.
+7. Test the image processing pipeline by uploading an image to the source bucket.
+8.  Monitor the Lambda function 
 
 
 
@@ -47,7 +60,7 @@ This project will guide you on how to use AWS Lambda and Amazon S3 to create a s
 
 - Leave the default settings and click "Create Bucket".
 
-  
+  <img src="D:\NetOps\AWS\Projects\Serverless image processing\1-create_S3buckets.PNG" alt="1-create_S3buckets" style="zoom:38%;" />
 
 #### 2. Create an S3 bucket for the processed images.
 
@@ -67,7 +80,7 @@ This project will guide you on how to use AWS Lambda and Amazon S3 to create a s
 
 - Name your role and click "Create Role".
 
-  
+  <img src="D:\NetOps\AWS\Projects\Serverless image processing\2b-IAM_role_Lambda.PNG" alt="2b-IAM_role_Lambda" style="zoom:38%;" />
 
 #### 4. Create a Lambda function in Python.
 
@@ -149,7 +162,7 @@ This Lambda function downloads an image from an S3 bucket, resizes and optimizes
 
 You can set the environment variable in the AWS Lambda function configuration. In the AWS Lambda console, go to the "Configuration" tab of the Lambda function, scroll down to the "Environment variables" section, and add a new environment variable with the key "DEST_BUCKET_NAME" and the value set to the name of your destination S3 bucket.
 
-
+<img src="D:\NetOps\AWS\Projects\Serverless image processing\add_env_variable.PNG" alt="add_env_variable" style="zoom:38%;" />
 
 ####  6. Set up S3 events to trigger the Lambda function
 
@@ -174,11 +187,13 @@ Now, whenever an image is uploaded to the S3 bucket, the Lambda function will be
 
 You can now test the image processing function using the AWS Lambda console, AWS CLI, or your own custom application.
 
+
+
 #### 8. Monitor the Lambda function 
 
-You can monitor the Lambda function and check its status using Amazon CloudWatch.
+You can monitor the Lambda function and check its status using Amazon CloudWatch. 
 
-#### 9. Clean up resources 
+
 
 When you're done testing and using the image processing function, make sure to clean up the resources to avoid any additional charges.
 
@@ -190,5 +205,5 @@ In conclusion, the Serverless Image Processing with AWS Lambda and Amazon S3 pro
 
 The project requires some prior knowledge of programming and AWS services, but the step-by-step guide and resources provided in the documentation make it accessible for beginners. The project is also customizable, allowing for modifications and extensions based on specific needs.
 
-Through this project, I have gained a deeper understanding of the power of serverless computing and how AWS Lambda functions can be used to process data efficiently and cost-effectively. I would highly recommend this project to anyone looking to learn more about serverless computing and AWS Lambda functions.
+
 
