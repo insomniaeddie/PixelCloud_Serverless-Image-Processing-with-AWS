@@ -81,7 +81,7 @@ This project will guide you on how to use AWS Lambda and Amazon S3 to create a s
 
 - Name your role and click "Create Role".
 
-  ![2b-IAM_role_Lambda](https://user-images.githubusercontent.com/49099173/221090254-3e27f714-713a-4123-b0ac-43a290b7b2e8.PNG)
+  ![2b-IAM_role_Lambda](https://user-images.githubusercontent.com/49099173/221090254-3e27f714-713a-4123-b0ac-43a290b7b2e8.PNG style="zoom: 50%;")
 
 
 #### 4. Create a Lambda function in Python.
