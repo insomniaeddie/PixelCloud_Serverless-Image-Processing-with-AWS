@@ -164,7 +164,7 @@ This Lambda function downloads an image from an S3 bucket, resizes and optimizes
 
 You can set the environment variable in the AWS Lambda function configuration. In the AWS Lambda console, go to the "Configuration" tab of the Lambda function, scroll down to the "Environment variables" section, and add a new environment variable with the key "DEST_BUCKET_NAME" and the value set to the name of your destination S3 bucket.
 
-![add_env_variable]<img src="https://user-images.githubusercontent.com/49099173/221090289-b67c6260-8a9c-4f50-b440-6091098ce5d1.PNG" style="zoom: 50%;">
+<img src="https://user-images.githubusercontent.com/49099173/221090289-b67c6260-8a9c-4f50-b440-6091098ce5d1.PNG" style="zoom: 50%;"/>
 
 
 ####  6. Set up S3 events to trigger the Lambda function
