@@ -1,4 +1,4 @@
-# Serverless Image Processing with AWS Lambda and Amazon S3
+# PixelCloud: Serverless Image Processing with AWS Lambda and Amazon S3
 
 
 
