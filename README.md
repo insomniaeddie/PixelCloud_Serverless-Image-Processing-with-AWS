@@ -23,7 +23,7 @@ Table of Contents:
 
 ### Project Description
 
-This project will guide you on how to use AWS Lambda and Amazon S3 to create a serverless image processing service that will automatically optimize and resize images. The images are uploaded to an S3 bucket and the Lambda function will automatically trigger to process the image. The processed image will be stored in another S3 bucket. This project will help you to create an image processing pipeline that can automatically process images as soon as they are uploaded to the source bucket.
+This project will guide you on how to use AWS Lambda and Amazon S3 to create a serverless image processing service (I named it "PixelizeCloud" just for a catchy name :laughing:) that will automatically optimize and resize images. The images are uploaded to an S3 bucket and the Lambda function will automatically trigger to process the image. The processed image will be stored in another S3 bucket. This project will help you to create an image processing pipeline that can automatically process images as soon as they are uploaded to the source bucket.
 
 
 
