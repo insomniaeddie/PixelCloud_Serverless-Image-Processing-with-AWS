@@ -20,7 +20,9 @@ Table of Contents:
 
 
 
-![PixelizeCloud_800x800](https://user-images.githubusercontent.com/49099173/221428099-cea51ef6-6d41-4df7-b15a-4f0fa756c6ef.png)
+
+![PixelizeCloud](https://user-images.githubusercontent.com/49099173/221428155-cbfd472d-d97f-4917-a911-b62cd3edefc1.png)
+
 
 
 
