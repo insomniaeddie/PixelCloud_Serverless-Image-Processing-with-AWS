@@ -19,7 +19,9 @@ Table of Contents:
 
 
 
-![PixelizeCloud](https://user-images.githubusercontent.com/49099173/221428042-de729afc-641a-4920-a772-d52f5a6854a0.png)
+
+![PixelizeCloud_800x800](https://user-images.githubusercontent.com/49099173/221428099-cea51ef6-6d41-4df7-b15a-4f0fa756c6ef.png)
+
 
 
 
