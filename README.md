@@ -21,7 +21,8 @@ Table of Contents:
 
 
 
-![PixelizeCloud (1)](https://user-images.githubusercontent.com/49099173/221428234-59468275-dc60-46d0-aa7e-afa42608d79e.png)
+
+![PixelizeCloud (2)](https://user-images.githubusercontent.com/49099173/221428315-ae84fdc7-c753-4bb9-8668-c1830537ec1e.png)
 
 
 
