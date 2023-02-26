@@ -169,9 +169,9 @@ This project will guide you on how to use AWS Lambda and Amazon S3 to create a s
   
   ```
 
-This Lambda function downloads an image from an S3 bucket, resizes and optimizes it, and then uploads the processed image to another S3 bucket. Note that you will need to set the `DEST_BUCKET_NAME` environment variable for this code to work.
+This Lambda function downloads an image from an S3 bucket, resizes and optimizes it, and then uploads the processed image to another S3 bucket. This function extracts the file name from the source S3 object key and check if it contains size information. If it does, it parses the size information and use it to resize the image before uploading it to the destination S3 bucket. For example, if the user uploads an image with the name "image_800x800.jpg", the lambda function will extract the size information "800x800" and resize the image to that size. 
 
-You can set the environment variable in the AWS Lambda function configuration. In the AWS Lambda console, go to the "Configuration" tab of the Lambda function, scroll down to the "Environment variables" section, and add a new environment variable with the key "DEST_BUCKET_NAME" and the value set to the name of your destination S3 bucket.
+Note that you will need to set the `DEST_BUCKET_NAME` environment variable for this code to work. You can set the environment variable in the AWS Lambda function configuration. In the AWS Lambda console, go to the "Configuration" tab of the Lambda function, scroll down to the "Environment variables" section, and add a new environment variable with the key "DEST_BUCKET_NAME" and the value set to the name of your destination S3 bucket.
 
 ![add_env_variable](https://user-images.githubusercontent.com/49099173/221092039-7dac78e7-6bb0-4cca-b9d7-71fb986e85d2.PNG)
 
